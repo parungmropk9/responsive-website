@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    font-family: "Oswald", sans-serif
+}
+ 
+nav{
+    display: flex;
+    background-color: 	#02474d;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+}
+
+nav .logo h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu-btn{
+    font-size: 25px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+nav .nav-menu ul{
+    display: flex;
+}
+
+nav .nav-menu ul li{
+    list-style-type: none;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+nav .nav-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.nav-menu ul li a:hover,.nav-menu ul li .active{
+    background-color: #046169;
+    border-radius: 10px;
+}
+
+/* ==========>header section<============ */
+
+
+header{
+    background:linear-gradient( #0000005d, #085b0854,#0000ff50), url(image/background-image.jpg) no-repeat center center /cover ;
+    width: 100%;
+    height: 90.8vh;
+    display: grid;
+    /* z-index: -999; */
+    place-items: center;
+    text-align: center;
+}
+
+header h1{
+    color: #fff;
+    font-size: 50px;
+}
+
+header h1 span{
+    color: #8bfe10;
+}
+
+header p{
+    color: #fff;
+    font-size: 20px;
+}
+
+/* ==========> services section<======= */
+
+.service{
+    width: 100%;
+    height: auto;
+    background-color: #192a56;
+    display: grid;
+    place-items: center;
+}
+
+.service h1{
+    color: #fff;
+    margin-top: 20px;
+}
+
+.service-container{
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin:50px 0;
+}
+ 
+
+.service-card{
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid green;
+    box-shadow: 3px 3px 8px #ffffff62;
+}
+
+.service-card i{
+    font-size: 25px;
+}
+
+.service-card h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.service-card p{
+    font-size: 13px;
+}
+
+/* =========>smart area<========== */
+
+.smart-area{
+   background-color: #273c75;
+   
+}
+
+.smart-area .title{
+    text-align: center;
+    color: yellow;
+    padding-top: 50px;
+}
+
+.smart-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 300px;
+}
+
+ 
+img{
+    width: 500px;
+}
+ 
+.smart-about{
+    margin-top: 50px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.smart-about h1{
+    font-size: 25px;
+    margin: 5px 0 10px 0;
+}
+
+.smart-about p{
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.smart-about button{
+    background-color: #00a8ff;
+    padding: 5px 8px;
+    border: none;
+    color: yellow;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.smart-about button:hover{
+    transform: scale(1.2);
+}
+
+
+/* ===========about  section start============= */
+.about{
+    width: 100%;
+    height: 100vh;
+     background: url(image/bg3.jpg) no-repeat center center / cover;
+    display: grid;
+    place-items: center ;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+    padding: 40px;
+}
+
+.about-data{
+    color: #fff;
+    text-align: justify;
+    padding-right: 10px;
+}
+
+.about-data p{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.about-data ul li{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.about-data button{
+    padding: 8px 10px ;
+    background-color: yellow;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+
+}
+
+.about-card-parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 10px;
+}
+
+.card-child{
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-child h2{
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+.card-child p{
+    text-align: justify;
+    font-size: 15px;
+}
+/* ===========about  section start============= */
+
+
+
+/* =============advice  section========== */
+
+
+.advice{
+    max-width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: #02474d;
+}
+
+.advice-conatainer{
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advice-child{
+    max-width: 40%;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.img{
+    width: 100%;
+}
+
+.advice-title{
+    padding: 0 10px;
+}
+
+.advice-title p{
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.advice-media-icon{
+    text-align: center;
+}
+
+.advice-media-icon i{
+   background-color: #fff;
+   padding: 4px 15px;
+   margin: 10px;
+   font-size: 15px;
+   color: black;
+   border-radius: 6px;
+   transition: all 0.5s;
+}
+
+.advice-media-icon i:hover{
+    background-color: #8bfe10;
+}
+
+.some-advice{
+    padding: 10px;
+    color: #fff;
+}
+
+.some-advice h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.some-advice p{
+    font-size: 14px;
+    text-align: justify;
+    border-top: 2px solid rgb(98, 0, 255);
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.some-advice button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+}
+
+
+/* ===========<contact section<========== */
+
+.contact-section{
+    max-width: 100%;
+    height: 100vh;
+    background: url(image/bg4.jpg) no-repeat center center / cover;
+    display: grid;
+    place-items: center;
+}
+
+form{
+    max-width: 50%;
+    background-color: #30336b;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+form h2{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input[type="user"], input[type="email"],input[type="text"]{
+    width: 100%;
+    min-height: 40px;
+    margin: 10px 0;
+    background:none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+   
+}
+
+form input[type="submit"]{
+    padding: 6px 20px;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid #8bfe10;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: all  0.5s;
+}
+
+form input[type="submit"]:hover{
+    background-color: #8bfe10;
+    color: black;
+    border-bottom: 1px solid blueviolet;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+
+/* =========>macth section  */
+.macth-sec{
+    max-width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: #222557;
+}
+
+.macth-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 150px;
+    gap: 20px;
+}
+
+.macth-parent .first-child h1{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+
+.macth-parent fieldset{
+    padding: 20px;
+    color: white;
+    border: 3px solid gray;
+}
+
+.macth-parent fieldset:first-of-type{
+    border: 3px solid #fff;
+}
+
+
+.macth-parent fieldset i{
+    font-size: 30px;
+    padding: 0 20px 10px 20px;
+}
+
+.macth-parent fieldset h5{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.macth-parent fieldset p{
+    font-size: 13px;
+    color: gray;
+    text-align: justify;
+}
+
+
+/* ==========>other section  */
+
+
+.ohter-container{
+    max-width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+    margin-top: 100px;
+}
+
+.other-first{
+    max-width: 40%;
+}
+
+.other-first h1{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.other-first p{
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.other-first ul li{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.other-image{
+    max-width: 40%;
+    height: auto;
+}
+
+.other-image .img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ========footer section  */
+
+footer{
+    max-width: 100%;
+    height: auto;
+    padding: 50px 150px;
+    background-color: #130f40;
+    display: flex;
+    color: gray;
+    gap: 40px;
+}
+
+.footer-about{
+    max-width: 40%;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.footer-about p{
+    font-size: 14px;
+}
+
+footer h3{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-links{
+    margin: 0 50px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.footer-links a{
+    display: block;
+    text-decoration: none;
+    margin: 5px 0;
+    color: gray;
+    transition: all 0.5s;
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+.footer-media{
+    text-align: center;
+}
+
+.footer-media i{
+    font-size: 25px;
+    margin:10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.footer-media i:hover{
+    color: rgb(229, 245, 51);
+}
+
+
+.copyright{
+    background-color: #34495e;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyright p{
+    letter-spacing: 3px;
+    color: gray;
+}
